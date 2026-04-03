@@ -121,8 +121,6 @@ module soc_system (
 	wire   [2:0] mm_interconnect_0_vga_ball_0_avalon_slave_0_address;    // mm_interconnect_0:vga_ball_0_avalon_slave_0_address -> vga_ball_0:address
 	wire         mm_interconnect_0_vga_ball_0_avalon_slave_0_write;      // mm_interconnect_0:vga_ball_0_avalon_slave_0_write -> vga_ball_0:write
 	wire   [7:0] mm_interconnect_0_vga_ball_0_avalon_slave_0_writedata;  // mm_interconnect_0:vga_ball_0_avalon_slave_0_writedata -> vga_ball_0:writedata
-	wire  [31:0] hps_0_f2h_irq0_irq;                                     // irq_mapper:sender_irq -> hps_0:f2h_irq_p0
-	wire  [31:0] hps_0_f2h_irq1_irq;                                     // irq_mapper_001:sender_irq -> hps_0:f2h_irq_p1
 	wire         rst_controller_reset_out_reset;                         // rst_controller:reset_out -> [mm_interconnect_0:vga_ball_0_reset_reset_bridge_in_reset_reset, vga_ball_0:reset]
 	wire         rst_controller_001_reset_out_reset;                     // rst_controller_001:reset_out -> mm_interconnect_0:hps_0_h2f_lw_axi_master_agent_clk_reset_reset_bridge_in_reset_reset
 	wire         hps_0_h2f_reset_reset;                                  // hps_0:h2f_rst_n -> rst_controller_001:reset_in0
@@ -310,9 +308,7 @@ module soc_system (
 		.h2f_lw_RRESP             (hps_0_h2f_lw_axi_master_rresp),   //                  .rresp
 		.h2f_lw_RLAST             (hps_0_h2f_lw_axi_master_rlast),   //                  .rlast
 		.h2f_lw_RVALID            (hps_0_h2f_lw_axi_master_rvalid),  //                  .rvalid
-		.h2f_lw_RREADY            (hps_0_h2f_lw_axi_master_rready),  //                  .rready
-		.f2h_irq_p0               (hps_0_f2h_irq0_irq),              //          f2h_irq0.irq
-		.f2h_irq_p1               (hps_0_f2h_irq1_irq)               //          f2h_irq1.irq
+		.h2f_lw_RREADY            (hps_0_h2f_lw_axi_master_rready)   //                  .rready
 	);
 
 	vga_ball vga_ball_0 (
@@ -376,18 +372,6 @@ module soc_system (
 		.vga_ball_0_avalon_slave_0_write                                     (mm_interconnect_0_vga_ball_0_avalon_slave_0_write),      //                                                              .write
 		.vga_ball_0_avalon_slave_0_writedata                                 (mm_interconnect_0_vga_ball_0_avalon_slave_0_writedata),  //                                                              .writedata
 		.vga_ball_0_avalon_slave_0_chipselect                                (mm_interconnect_0_vga_ball_0_avalon_slave_0_chipselect)  //                                                              .chipselect
-	);
-
-	soc_system_irq_mapper irq_mapper (
-		.clk        (),                   //       clk.clk
-		.reset      (),                   // clk_reset.reset
-		.sender_irq (hps_0_f2h_irq0_irq)  //    sender.irq
-	);
-
-	soc_system_irq_mapper irq_mapper_001 (
-		.clk        (),                   //       clk.clk
-		.reset      (),                   // clk_reset.reset
-		.sender_irq (hps_0_f2h_irq1_irq)  //    sender.irq
 	);
 
 	altera_reset_controller #(

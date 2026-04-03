@@ -1,6 +1,15 @@
 	component soc_system is
 		port (
 			clk_clk                      : in    std_logic                     := 'X';             -- clk
+			reset_reset_n                : in    std_logic                     := 'X';             -- reset_n
+			vga_b                        : out   std_logic_vector(7 downto 0);                     -- b
+			vga_blank_n                  : out   std_logic;                                        -- blank_n
+			vga_clk                      : out   std_logic;                                        -- clk
+			vga_g                        : out   std_logic_vector(7 downto 0);                     -- g
+			vga_hs                       : out   std_logic;                                        -- hs
+			vga_r                        : out   std_logic_vector(7 downto 0);                     -- r
+			vga_sync_n                   : out   std_logic;                                        -- sync_n
+			vga_vs                       : out   std_logic;                                        -- vs
 			hps_hps_io_emac1_inst_TX_CLK : out   std_logic;                                        -- hps_io_emac1_inst_TX_CLK
 			hps_hps_io_emac1_inst_TXD0   : out   std_logic;                                        -- hps_io_emac1_inst_TXD0
 			hps_hps_io_emac1_inst_TXD1   : out   std_logic;                                        -- hps_io_emac1_inst_TXD1
@@ -65,22 +74,22 @@
 			hps_ddr3_mem_dqs_n           : inout std_logic_vector(3 downto 0)  := (others => 'X'); -- mem_dqs_n
 			hps_ddr3_mem_odt             : out   std_logic;                                        -- mem_odt
 			hps_ddr3_mem_dm              : out   std_logic_vector(3 downto 0);                     -- mem_dm
-			hps_ddr3_oct_rzqin           : in    std_logic                     := 'X';             -- oct_rzqin
-			reset_reset_n                : in    std_logic                     := 'X';             -- reset_n
-			vga_b                        : out   std_logic_vector(7 downto 0);                     -- b
-			vga_blank_n                  : out   std_logic;                                        -- blank_n
-			vga_clk                      : out   std_logic;                                        -- clk
-			vga_g                        : out   std_logic_vector(7 downto 0);                     -- g
-			vga_hs                       : out   std_logic;                                        -- hs
-			vga_r                        : out   std_logic_vector(7 downto 0);                     -- r
-			vga_sync_n                   : out   std_logic;                                        -- sync_n
-			vga_vs                       : out   std_logic                                         -- vs
+			hps_ddr3_oct_rzqin           : in    std_logic                     := 'X'              -- oct_rzqin
 		);
 	end component soc_system;
 
 	u0 : component soc_system
 		port map (
 			clk_clk                      => CONNECTED_TO_clk_clk,                      --      clk.clk
+			reset_reset_n                => CONNECTED_TO_reset_reset_n,                --    reset.reset_n
+			vga_b                        => CONNECTED_TO_vga_b,                        --      vga.b
+			vga_blank_n                  => CONNECTED_TO_vga_blank_n,                  --         .blank_n
+			vga_clk                      => CONNECTED_TO_vga_clk,                      --         .clk
+			vga_g                        => CONNECTED_TO_vga_g,                        --         .g
+			vga_hs                       => CONNECTED_TO_vga_hs,                       --         .hs
+			vga_r                        => CONNECTED_TO_vga_r,                        --         .r
+			vga_sync_n                   => CONNECTED_TO_vga_sync_n,                   --         .sync_n
+			vga_vs                       => CONNECTED_TO_vga_vs,                       --         .vs
 			hps_hps_io_emac1_inst_TX_CLK => CONNECTED_TO_hps_hps_io_emac1_inst_TX_CLK, --      hps.hps_io_emac1_inst_TX_CLK
 			hps_hps_io_emac1_inst_TXD0   => CONNECTED_TO_hps_hps_io_emac1_inst_TXD0,   --         .hps_io_emac1_inst_TXD0
 			hps_hps_io_emac1_inst_TXD1   => CONNECTED_TO_hps_hps_io_emac1_inst_TXD1,   --         .hps_io_emac1_inst_TXD1
@@ -145,15 +154,6 @@
 			hps_ddr3_mem_dqs_n           => CONNECTED_TO_hps_ddr3_mem_dqs_n,           --         .mem_dqs_n
 			hps_ddr3_mem_odt             => CONNECTED_TO_hps_ddr3_mem_odt,             --         .mem_odt
 			hps_ddr3_mem_dm              => CONNECTED_TO_hps_ddr3_mem_dm,              --         .mem_dm
-			hps_ddr3_oct_rzqin           => CONNECTED_TO_hps_ddr3_oct_rzqin,           --         .oct_rzqin
-			reset_reset_n                => CONNECTED_TO_reset_reset_n,                --    reset.reset_n
-			vga_b                        => CONNECTED_TO_vga_b,                        --      vga.b
-			vga_blank_n                  => CONNECTED_TO_vga_blank_n,                  --         .blank_n
-			vga_clk                      => CONNECTED_TO_vga_clk,                      --         .clk
-			vga_g                        => CONNECTED_TO_vga_g,                        --         .g
-			vga_hs                       => CONNECTED_TO_vga_hs,                       --         .hs
-			vga_r                        => CONNECTED_TO_vga_r,                        --         .r
-			vga_sync_n                   => CONNECTED_TO_vga_sync_n,                   --         .sync_n
-			vga_vs                       => CONNECTED_TO_vga_vs                        --         .vs
+			hps_ddr3_oct_rzqin           => CONNECTED_TO_hps_ddr3_oct_rzqin            --         .oct_rzqin
 		);
 
