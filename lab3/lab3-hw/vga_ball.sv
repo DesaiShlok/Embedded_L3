@@ -3,6 +3,17 @@
  *
  * Stephen A. Edwards
  * Columbia University
+ *
+ * Register map:
+ *
+ * Byte Offset   7 ... 0     Meaning
+ *        0     |  Red   |   Red component of background color (0-255)
+ *        1     | Green  |   Green component of background color (0-255)
+ *        2     | Blue   |   Blue component of background color (0-255)
+ *        3     | H low  |   Ball x-coordinate, bits [7:0]
+ *        4     | H high |   Ball x-coordinate, bits [15:8]
+ *        5     | V low  |   Ball y-coordinate, bits [7:0]
+ *        6     | V high |   Ball y-coordinate, bits [15:8]
  */
 
 module vga_ball(input logic        clk,
