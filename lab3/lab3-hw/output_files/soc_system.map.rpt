@@ -1,5 +1,9 @@
 Analysis & Synthesis report for soc_system
+<<<<<<< Updated upstream
 Thu Apr  2 20:46:53 2026
+=======
+Thu Apr  2 22:24:26 2026
+>>>>>>> Stashed changes
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -226,7 +230,11 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
+<<<<<<< Updated upstream
 ; Analysis & Synthesis Status     ; Successful - Thu Apr  2 20:46:53 2026       ;
+=======
+; Analysis & Synthesis Status     ; Successful - Thu Apr  2 22:24:26 2026       ;
+>>>>>>> Stashed changes
 ; Quartus Prime Version           ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                   ; soc_system                                  ;
 ; Top-level Entity Name           ; soc_system_top                              ;
@@ -362,6 +370,10 @@ https://fpgasoftware.intel.com/eula.
 ; soc_system/synthesis/soc_system.v                                                                 ; yes             ; User Verilog HDL File        ; /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis/soc_system.v                                                                 ; soc_system ;
 ; soc_system/synthesis/submodules/altera_reset_controller.v                                         ; yes             ; User Verilog HDL File        ; /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis/submodules/altera_reset_controller.v                                         ; soc_system ;
 ; soc_system/synthesis/submodules/altera_reset_synchronizer.v                                       ; yes             ; User Verilog HDL File        ; /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis/submodules/altera_reset_synchronizer.v                                       ; soc_system ;
+<<<<<<< Updated upstream
+=======
+; soc_system/synthesis/submodules/soc_system_irq_mapper.sv                                          ; yes             ; User SystemVerilog HDL File  ; /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis/submodules/soc_system_irq_mapper.sv                                          ; soc_system ;
+>>>>>>> Stashed changes
 ; soc_system/synthesis/submodules/soc_system_mm_interconnect_0.v                                    ; yes             ; User Verilog HDL File        ; /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis/submodules/soc_system_mm_interconnect_0.v                                    ; soc_system ;
 ; soc_system/synthesis/submodules/soc_system_mm_interconnect_0_avalon_st_adapter.v                  ; yes             ; User Verilog HDL File        ; /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis/submodules/soc_system_mm_interconnect_0_avalon_st_adapter.v                  ; soc_system ;
 ; soc_system/synthesis/submodules/soc_system_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv ; yes             ; User SystemVerilog HDL File  ; /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis/submodules/soc_system_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv ; soc_system ;
@@ -4607,7 +4619,11 @@ Info: Running Quartus Prime Analysis & Synthesis
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
+<<<<<<< Updated upstream
     Info: Processing started: Thu Apr  2 20:44:13 2026
+=======
+    Info: Processing started: Thu Apr  2 22:21:47 2026
+>>>>>>> Stashed changes
 Info: Command: quartus_map soc_system
 Info (20032): Parallel compilation is enabled and will use up to 4 processors
 Info (12021): Found 1 design units, including 1 entities, in source file soc_system_top.sv
@@ -4618,6 +4634,11 @@ Info (12021): Found 1 design units, including 1 entities, in source file soc_sys
     Info (12023): Found entity 1: altera_reset_controller File: /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis/submodules/altera_reset_controller.v Line: 42
 Info (12021): Found 1 design units, including 1 entities, in source file soc_system/synthesis/submodules/altera_reset_synchronizer.v
     Info (12023): Found entity 1: altera_reset_synchronizer File: /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis/submodules/altera_reset_synchronizer.v Line: 24
+<<<<<<< Updated upstream
+=======
+Info (12021): Found 1 design units, including 1 entities, in source file soc_system/synthesis/submodules/soc_system_irq_mapper.sv
+    Info (12023): Found entity 1: soc_system_irq_mapper File: /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis/submodules/soc_system_irq_mapper.sv Line: 31
+>>>>>>> Stashed changes
 Info (12021): Found 1 design units, including 1 entities, in source file soc_system/synthesis/submodules/soc_system_mm_interconnect_0.v
     Info (12023): Found entity 1: soc_system_mm_interconnect_0 File: /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis/submodules/soc_system_mm_interconnect_0.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file soc_system/synthesis/submodules/soc_system_mm_interconnect_0_avalon_st_adapter.v
@@ -4728,10 +4749,17 @@ Info (12021): Found 1 design units, including 1 entities, in source file soc_sys
     Info (12023): Found entity 1: soc_system_hps_0_fpga_interfaces File: /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis/submodules/soc_system_hps_0_fpga_interfaces.sv Line: 14
 Warning (10236): Verilog HDL Implicit Net warning at hps_sdram_pll.sv(168): created implicit net for "pll_dr_clk" File: /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis/submodules/hps_sdram_pll.sv Line: 168
 Info (12127): Elaborating entity "soc_system_top" for the top level hierarchy
+<<<<<<< Updated upstream
 Info (12128): Elaborating entity "soc_system" for hierarchy "soc_system:soc_system0" File: /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system_top.sv Line: 280
 Info (12128): Elaborating entity "soc_system_hps_0" for hierarchy "soc_system:soc_system0|soc_system_hps_0:hps_0" File: /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis/soc_system.v Line: 312
 Info (12128): Elaborating entity "soc_system_hps_0_fpga_interfaces" for hierarchy "soc_system:soc_system0|soc_system_hps_0:hps_0|soc_system_hps_0_fpga_interfaces:fpga_interfaces" File: /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis/submodules/soc_system_hps_0.v Line: 337
 Info (12128): Elaborating entity "soc_system_hps_0_hps_io" for hierarchy "soc_system:soc_system0|soc_system_hps_0:hps_0|soc_system_hps_0_hps_io:hps_io" File: /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis/submodules/soc_system_hps_0.v Line: 405
+=======
+Info (12128): Elaborating entity "soc_system" for hierarchy "soc_system:soc_system0" File: /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system_top.sv Line: 278
+Info (12128): Elaborating entity "soc_system_hps_0" for hierarchy "soc_system:soc_system0|soc_system_hps_0:hps_0" File: /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis/soc_system.v Line: 316
+Info (12128): Elaborating entity "soc_system_hps_0_fpga_interfaces" for hierarchy "soc_system:soc_system0|soc_system_hps_0:hps_0|soc_system_hps_0_fpga_interfaces:fpga_interfaces" File: /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis/submodules/soc_system_hps_0.v Line: 341
+Info (12128): Elaborating entity "soc_system_hps_0_hps_io" for hierarchy "soc_system:soc_system0|soc_system_hps_0:hps_0|soc_system_hps_0_hps_io:hps_io" File: /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis/submodules/soc_system_hps_0.v Line: 409
+>>>>>>> Stashed changes
 Info (12128): Elaborating entity "soc_system_hps_0_hps_io_border" for hierarchy "soc_system:soc_system0|soc_system_hps_0:hps_0|soc_system_hps_0_hps_io:hps_io|soc_system_hps_0_hps_io_border:border" File: /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis/submodules/soc_system_hps_0_hps_io.v Line: 143
 Info (12128): Elaborating entity "hps_sdram" for hierarchy "soc_system:soc_system0|soc_system_hps_0:hps_0|soc_system_hps_0_hps_io:hps_io|soc_system_hps_0_hps_io_border:border|hps_sdram:hps_sdram_inst" File: /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis/submodules/soc_system_hps_0_hps_io_border.sv Line: 406
 Info (12128): Elaborating entity "hps_sdram_pll" for hierarchy "soc_system:soc_system0|soc_system_hps_0:hps_0|soc_system_hps_0_hps_io:hps_io|soc_system_hps_0_hps_io_border:border|hps_sdram:hps_sdram_inst|hps_sdram_pll:pll" File: /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis/submodules/hps_sdram.v Line: 105
@@ -4775,6 +4803,10 @@ Info (12128): Elaborating entity "hps_sdram_p0_clock_pair_generator" for hierarc
 Info (12128): Elaborating entity "hps_sdram_p0_altdqdqs" for hierarchy "soc_system:soc_system0|soc_system_hps_0:hps_0|soc_system_hps_0_hps_io:hps_io|soc_system_hps_0_hps_io_border:border|hps_sdram:hps_sdram_inst|hps_sdram_p0:p0|hps_sdram_p0_acv_hard_memphy:umemphy|hps_sdram_p0_acv_hard_io_pads:uio_pads|hps_sdram_p0_altdqdqs:dq_ddio[0].ubidir_dq_dqs" File: /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis/submodules/hps_sdram_p0_acv_hard_io_pads.v Line: 317
 Info (12128): Elaborating entity "altdq_dqs2_acv_connect_to_hard_phy_cyclonev" for hierarchy "soc_system:soc_system0|soc_system_hps_0:hps_0|soc_system_hps_0_hps_io:hps_io|soc_system_hps_0_hps_io_border:border|hps_sdram:hps_sdram_inst|hps_sdram_p0:p0|hps_sdram_p0_acv_hard_memphy:umemphy|hps_sdram_p0_acv_hard_io_pads:uio_pads|hps_sdram_p0_altdqdqs:dq_ddio[0].ubidir_dq_dqs|altdq_dqs2_acv_connect_to_hard_phy_cyclonev:altdq_dqs2_inst" File: /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis/submodules/hps_sdram_p0_altdqdqs.v Line: 146
 Info (12128): Elaborating entity "altera_mem_if_hhp_qseq_synth_top" for hierarchy "soc_system:soc_system0|soc_system_hps_0:hps_0|soc_system_hps_0_hps_io:hps_io|soc_system_hps_0_hps_io_border:border|hps_sdram:hps_sdram_inst|altera_mem_if_hhp_qseq_synth_top:seq" File: /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis/submodules/hps_sdram.v Line: 238
+<<<<<<< Updated upstream
+=======
+Warning (12158): Entity "altera_mem_if_hhp_qseq_synth_top" contains only dangling pins File: /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis/submodules/hps_sdram.v Line: 238
+>>>>>>> Stashed changes
 Info (12128): Elaborating entity "altera_mem_if_hard_memory_controller_top_cyclonev" for hierarchy "soc_system:soc_system0|soc_system_hps_0:hps_0|soc_system_hps_0_hps_io:hps_io|soc_system_hps_0_hps_io_border:border|hps_sdram:hps_sdram_inst|altera_mem_if_hard_memory_controller_top_cyclonev:c0" File: /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis/submodules/hps_sdram.v Line: 794
 Warning (10230): Verilog HDL assignment warning at altera_mem_if_hard_memory_controller_top_cyclonev.sv(1166): truncated value with size 320 to match size of target (1) File: /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis/submodules/altera_mem_if_hard_memory_controller_top_cyclonev.sv Line: 1166
 Warning (10230): Verilog HDL assignment warning at altera_mem_if_hard_memory_controller_top_cyclonev.sv(1167): truncated value with size 320 to match size of target (1) File: /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis/submodules/altera_mem_if_hard_memory_controller_top_cyclonev.sv Line: 1167
@@ -4784,9 +4816,15 @@ Warning (10230): Verilog HDL assignment warning at altera_mem_if_hard_memory_con
 Warning (10230): Verilog HDL assignment warning at altera_mem_if_hard_memory_controller_top_cyclonev.sv(1171): truncated value with size 320 to match size of target (1) File: /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis/submodules/altera_mem_if_hard_memory_controller_top_cyclonev.sv Line: 1171
 Info (12128): Elaborating entity "altera_mem_if_oct_cyclonev" for hierarchy "soc_system:soc_system0|soc_system_hps_0:hps_0|soc_system_hps_0_hps_io:hps_io|soc_system_hps_0_hps_io_border:border|hps_sdram:hps_sdram_inst|altera_mem_if_oct_cyclonev:oct" File: /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis/submodules/hps_sdram.v Line: 802
 Info (12128): Elaborating entity "altera_mem_if_dll_cyclonev" for hierarchy "soc_system:soc_system0|soc_system_hps_0:hps_0|soc_system_hps_0_hps_io:hps_io|soc_system_hps_0_hps_io_border:border|hps_sdram:hps_sdram_inst|altera_mem_if_dll_cyclonev:dll" File: /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis/submodules/hps_sdram.v Line: 814
+<<<<<<< Updated upstream
 Info (12128): Elaborating entity "vga_ball" for hierarchy "soc_system:soc_system0|vga_ball:vga_ball_0" File: /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis/soc_system.v Line: 329
 Info (12128): Elaborating entity "vga_counters" for hierarchy "soc_system:soc_system0|vga_ball:vga_ball_0|vga_counters:counters" File: /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis/submodules/vga_ball.sv Line: 34
 Info (12128): Elaborating entity "soc_system_mm_interconnect_0" for hierarchy "soc_system:soc_system0|soc_system_mm_interconnect_0:mm_interconnect_0" File: /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis/soc_system.v Line: 375
+=======
+Info (12128): Elaborating entity "vga_ball" for hierarchy "soc_system:soc_system0|vga_ball:vga_ball_0" File: /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis/soc_system.v Line: 333
+Info (12128): Elaborating entity "vga_counters" for hierarchy "soc_system:soc_system0|vga_ball:vga_ball_0|vga_counters:counters" File: /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis/submodules/vga_ball.sv Line: 34
+Info (12128): Elaborating entity "soc_system_mm_interconnect_0" for hierarchy "soc_system:soc_system0|soc_system_mm_interconnect_0:mm_interconnect_0" File: /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis/soc_system.v Line: 379
+>>>>>>> Stashed changes
 Info (12128): Elaborating entity "altera_merlin_slave_translator" for hierarchy "soc_system:soc_system0|soc_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:vga_ball_0_avalon_slave_0_translator" File: /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis/submodules/soc_system_mm_interconnect_0.v Line: 242
 Info (12128): Elaborating entity "altera_merlin_axi_master_ni" for hierarchy "soc_system:soc_system0|soc_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_axi_master_ni:hps_0_h2f_lw_axi_master_agent" File: /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis/submodules/soc_system_mm_interconnect_0.v Line: 370
 Info (12128): Elaborating entity "altera_merlin_address_alignment" for hierarchy "soc_system:soc_system0|soc_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_axi_master_ni:hps_0_h2f_lw_axi_master_agent|altera_merlin_address_alignment:align_address_to_size" File: /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis/submodules/altera_merlin_axi_master_ni.sv Line: 485
@@ -4823,7 +4861,12 @@ Warning (10240): Verilog HDL Always Construct warning at altera_merlin_width_ada
 Info (12128): Elaborating entity "altera_merlin_address_alignment" for hierarchy "soc_system:soc_system0|soc_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_width_adapter:vga_ball_0_avalon_slave_0_cmd_width_adapter|altera_merlin_address_alignment:check_and_align_address_to_size" File: /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis/submodules/altera_merlin_width_adapter.sv Line: 388
 Info (12128): Elaborating entity "soc_system_mm_interconnect_0_avalon_st_adapter" for hierarchy "soc_system:soc_system0|soc_system_mm_interconnect_0:mm_interconnect_0|soc_system_mm_interconnect_0_avalon_st_adapter:avalon_st_adapter" File: /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis/submodules/soc_system_mm_interconnect_0.v Line: 909
 Info (12128): Elaborating entity "soc_system_mm_interconnect_0_avalon_st_adapter_error_adapter_0" for hierarchy "soc_system:soc_system0|soc_system_mm_interconnect_0:mm_interconnect_0|soc_system_mm_interconnect_0_avalon_st_adapter:avalon_st_adapter|soc_system_mm_interconnect_0_avalon_st_adapter_error_adapter_0:error_adapter_0" File: /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis/submodules/soc_system_mm_interconnect_0_avalon_st_adapter.v Line: 200
+<<<<<<< Updated upstream
 Info (12128): Elaborating entity "altera_reset_controller" for hierarchy "soc_system:soc_system0|altera_reset_controller:rst_controller" File: /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis/soc_system.v Line: 438
+=======
+Info (12128): Elaborating entity "soc_system_irq_mapper" for hierarchy "soc_system:soc_system0|soc_system_irq_mapper:irq_mapper" File: /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis/soc_system.v Line: 385
+Info (12128): Elaborating entity "altera_reset_controller" for hierarchy "soc_system:soc_system0|altera_reset_controller:rst_controller" File: /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis/soc_system.v Line: 454
+>>>>>>> Stashed changes
 Info (12128): Elaborating entity "altera_reset_synchronizer" for hierarchy "soc_system:soc_system0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1" File: /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis/submodules/altera_reset_controller.v Line: 208
 Info (12128): Elaborating entity "altera_reset_synchronizer" for hierarchy "soc_system:soc_system0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1" File: /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis/submodules/altera_reset_controller.v Line: 220
 Warning (12241): 32 hierarchies have connectivity warnings - see the Connectivity Checks report folder
@@ -4926,18 +4969,30 @@ Warning (21074): Design contains 23 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "TD_DATA[7]" File: /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system_top.sv Line: 175
     Warning (15610): No output dependent on input pin "TD_HS" File: /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system_top.sv Line: 176
     Warning (15610): No output dependent on input pin "TD_VS" File: /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system_top.sv Line: 178
+<<<<<<< Updated upstream
 Info (21057): Implemented 1708 device resources after synthesis - the final resource count might be different
+=======
+Info (21057): Implemented 1709 device resources after synthesis - the final resource count might be different
+>>>>>>> Stashed changes
     Info (21058): Implemented 44 input pins
     Info (21059): Implemented 155 output pins
     Info (21060): Implemented 163 bidirectional pins
     Info (21061): Implemented 696 logic cells
     Info (21066): Implemented 1 delay-locked loops
     Info (21062): Implemented 1 DSP elements
+<<<<<<< Updated upstream
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 120 warnings
     Info: Peak virtual memory: 987 megabytes
     Info: Processing ended: Thu Apr  2 20:46:53 2026
     Info: Elapsed time: 00:02:40
     Info: Total CPU time (on all processors): 00:02:40
+=======
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 121 warnings
+    Info: Peak virtual memory: 972 megabytes
+    Info: Processing ended: Thu Apr  2 22:24:26 2026
+    Info: Elapsed time: 00:02:39
+    Info: Total CPU time (on all processors): 00:02:39
+>>>>>>> Stashed changes
 
 
 +------------------------------------------+

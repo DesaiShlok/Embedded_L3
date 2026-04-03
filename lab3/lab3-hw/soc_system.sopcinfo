@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="soc_system" kind="soc_system" version="1.0" fabric="QSYS">
  <!-- Format version 21.1 842 (Future versions may contain additional information.) -->
+<<<<<<< Updated upstream
  <!-- 2026.04.02.20:04:45 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
   <value>1775174681</value>
+=======
+ <!-- 2026.04.02.22:20:54 -->
+ <!-- A collection of modules and connections -->
+ <parameter name="AUTO_GENERATION_ID">
+  <type>java.lang.Integer</type>
+  <value>1775182849</value>
+>>>>>>> Stashed changes
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>

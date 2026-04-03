@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 Info: Starting: Create block symbol file (.bsf)
 Info: qsys-generate /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system.qsys --block-symbol-file --output-directory=/homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system --family="Cyclone V" --part=5CSEMA5F31C6
 Progress: Loading lab3-hw/soc_system.qsys
@@ -17,6 +18,8 @@ Info: soc_system.hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
 Info: qsys-generate succeeded.
 Info: Finished: Create block symbol file (.bsf)
 Info: 
+=======
+>>>>>>> Stashed changes
 Info: Starting: Create HDL design files for synthesis
 Info: qsys-generate /homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system.qsys --synthesis=VERILOG --output-directory=/homes/user/stud/fall25/ud2142/temp_sbd2150/EmbeddedSystemsLab3/Embedded_L3/lab3/lab3-hw/soc_system/synthesis --family="Cyclone V" --part=5CSEMA5F31C6
 Progress: Loading lab3-hw/soc_system.qsys

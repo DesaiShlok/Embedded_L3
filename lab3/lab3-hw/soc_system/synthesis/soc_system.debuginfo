@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="soc_system" kind="system" version="21.1" fabric="QSYS">
  <!-- Format version 21.1 842 (Future versions may contain additional information.) -->
+<<<<<<< Updated upstream
  <!-- 2026.04.02.20:05:03 -->
+=======
+ <!-- 2026.04.02.22:21:12 -->
+>>>>>>> Stashed changes
  <!-- A collection of modules and connections -->
  <parameter name="clockCrossingAdapter">
   <type>com.altera.sopcmodel.ensemble.EClockAdapter</type>
@@ -53,7 +57,11 @@
  </parameter>
  <parameter name="generationId">
   <type>int</type>
+<<<<<<< Updated upstream
   <value>1775174681</value>
+=======
+  <value>1775182849</value>
+>>>>>>> Stashed changes
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>true</visible>
@@ -44813,5 +44821,9 @@ parameters are a RESULT of the module parameters. -->
   <version>21.1</version>
  </plugin>
  <reportVersion>21.1 842</reportVersion>
+<<<<<<< Updated upstream
  <uniqueIdentifier>CC96E51A6DDC0000019D50A82AC2</uniqueIdentifier>
+=======
+ <uniqueIdentifier>CC96E51A6DDC0000019D5124D08F</uniqueIdentifier>
+>>>>>>> Stashed changes
 </EnsembleReport>
